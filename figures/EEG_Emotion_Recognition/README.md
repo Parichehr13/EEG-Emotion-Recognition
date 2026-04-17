@@ -35,25 +35,6 @@ This folder serves as a visual summary of the experimental pipeline and results.
 - quickly review evaluation results
 - compare baseline and optimized model behavior
 - reuse result figures in documentation, presentations, or academic reporting
-
----
-
-## Figure Organization
-
-The file names follow an exported-notebook naming pattern:
-
-```text
-figure_<index>_cell<cell_number>_<section>.png
-```
-
-This naming convention preserves the notebook provenance of each figure, making it easier to trace a figure back to the stage of the experiment where it was produced.
-
-The `manifest.json` file maps each exported figure to:
-
-- its figure index
-- the original notebook cell number
-- the notebook section heading
-
 ---
 
 ## Figure Groups
