@@ -132,6 +132,431 @@ The curves show a stable learning process, with training performance improving s
 
 ---
 
+## Complete Figure Gallery
+
+The sections below include **all exported figures currently tracked in the repository**, including the confusion matrices, CNN diagrams, training plots, and classical baseline outputs from the notebook.
+
+<details>
+<summary>DEAP Loading And Baseline CNN</summary>
+
+### Figure 01
+
+Notebook section: `Loading Data > Loading and Pre-processing Deap Dataset`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_01_cell009_loading-data__loading-and-pre-processing-deap-dataset.png" alt="Figure 01" width="620">
+</p>
+
+### Figure 02
+
+Notebook section: `CNN Model Before HP Tuning > Loading Data and Labels`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_02_cell021_cnn-model-before-hp-tuning__loading-data-and-labels.png" alt="Figure 02" width="620">
+</p>
+
+### Figure 03
+
+Notebook section: `Training and Evaluation Before HP Tuning > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_03_cell028_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png" alt="Figure 03" width="620">
+</p>
+
+### Figure 04
+
+Notebook section: `Training and Evaluation Before HP Tuning > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_04_cell029_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png" alt="Figure 04" width="620">
+</p>
+
+### Figure 05
+
+Notebook section: `Training and Evaluation Before HP Tuning > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_05_cell032_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png" alt="Figure 05" width="620">
+</p>
+
+### Figure 06
+
+Notebook section: `Training and Evaluation Before HP Tuning > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_06_cell033_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png" alt="Figure 06" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>Optimized CNN And DEAP Valence Outputs</summary>
+
+### Figure 07
+
+Notebook section: `CNN Model > 5th Layer (i.e. Dense2) HPO > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_07_cell082_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png" alt="Figure 07" width="620">
+</p>
+
+### Figure 08
+
+Notebook section: `CNN Model > 5th Layer (i.e. Dense2) HPO > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_08_cell084_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png" alt="Figure 08" width="620">
+</p>
+
+### Figure 09
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_09_cell092_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 09" width="620">
+</p>
+
+### Figure 10
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_10_cell093_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 10" width="620">
+</p>
+
+### Figure 11
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_11_cell096_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 11" width="620">
+</p>
+
+### Figure 12
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_12_cell097_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 12" width="620">
+</p>
+
+### Figure 13
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_13_cell100_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 13" width="620">
+</p>
+
+### Figure 14
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_14_cell101_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 14" width="620">
+</p>
+
+### Figure 15
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_15_cell104_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 15" width="620">
+</p>
+
+### Figure 16
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_16_cell105_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 16" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>DEAP Arousal Outputs</summary>
+
+### Figure 17
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_17_cell112_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 17" width="620">
+</p>
+
+### Figure 18
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_18_cell113_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 18" width="620">
+</p>
+
+### Figure 19
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_19_cell116_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 19" width="620">
+</p>
+
+### Figure 20
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_20_cell117_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 20" width="620">
+</p>
+
+### Figure 21
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_21_cell120_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 21" width="620">
+</p>
+
+### Figure 22
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_22_cell121_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 22" width="620">
+</p>
+
+### Figure 23
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_23_cell124_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 23" width="620">
+</p>
+
+### Figure 24
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_24_cell125_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 24" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>DEAP Dominance Outputs</summary>
+
+### Figure 25
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_25_cell132_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 25" width="620">
+</p>
+
+### Figure 26
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_26_cell133_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 26" width="620">
+</p>
+
+### Figure 27
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_27_cell136_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 27" width="620">
+</p>
+
+### Figure 28
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_28_cell137_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 28" width="620">
+</p>
+
+### Figure 29
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_29_cell140_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 29" width="620">
+</p>
+
+### Figure 30
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_30_cell141_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 30" width="620">
+</p>
+
+### Figure 31
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_31_cell144_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 31" width="620">
+</p>
+
+### Figure 32
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_32_cell145_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 32" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>DEAP Liking Outputs</summary>
+
+### Figure 33
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_33_cell152_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 33" width="620">
+</p>
+
+### Figure 34
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_34_cell153_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 34" width="620">
+</p>
+
+### Figure 35
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_35_cell156_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 35" width="620">
+</p>
+
+### Figure 36
+
+Notebook section: `Training and Evaluation > Training and Evaluation with std calculation > Training and Evaluation with std calculation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_36_cell157_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png" alt="Figure 36" width="620">
+</p>
+
+### Figure 37
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_37_cell160_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 37" width="620">
+</p>
+
+### Figure 38
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_38_cell161_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 38" width="620">
+</p>
+
+### Figure 39
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_39_cell164_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 39" width="620">
+</p>
+
+### Figure 40
+
+Notebook section: `Training and Evaluation > Training and Evaluation > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_40_cell165_training-and-evaluation__training-and-evaluation__training-and-evaluation.png" alt="Figure 40" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>Classical ML Baseline Outputs</summary>
+
+### Figure 41
+
+Notebook section: `ML Models > SVM > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_41_cell173_ml-models__svm__training-and-evaluation.png" alt="Figure 41" width="620">
+</p>
+
+### Figure 42
+
+Notebook section: `ML Models > RFC > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_42_cell175_ml-models__rfc__training-and-evaluation.png" alt="Figure 42" width="620">
+</p>
+
+### Figure 43
+
+Notebook section: `ML Models > MLP > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_43_cell177_ml-models__mlp__training-and-evaluation.png" alt="Figure 43" width="620">
+</p>
+
+### Figure 44
+
+Notebook section: `ML Models > KNN > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_44_cell179_ml-models__knn__training-and-evaluation.png" alt="Figure 44" width="620">
+</p>
+
+</details>
+
+<details>
+<summary>SEED Outputs</summary>
+
+### Figure 45
+
+Notebook section: `CNN Model > Loading and Pre-processing SEED Dataset > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_45_cell191_cnn-model__loading-and-pre-processing-seed-dataset__training-and-evaluation.png" alt="Figure 45" width="620">
+</p>
+
+### Figure 46
+
+Notebook section: `Training and Evaluation > Loading and Pre-processing SEED Dataset > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_46_cell196_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png" alt="Figure 46" width="620">
+</p>
+
+### Figure 47
+
+Notebook section: `Training and Evaluation > Loading and Pre-processing SEED Dataset > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_47_cell197_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png" alt="Figure 47" width="620">
+</p>
+
+### Figure 48
+
+Notebook section: `Training and Evaluation > Loading and Pre-processing SEED Dataset > Training and Evaluation`
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_48_cell200_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png" alt="Figure 48" width="620">
+</p>
+
+</details>
+
+---
+
 ## Why This Project Matters
 
 Emotion recognition from EEG is relevant to several active research and application areas, including:
