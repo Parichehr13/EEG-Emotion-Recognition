@@ -152,17 +152,17 @@ A clean structure for this project can follow the layout below:
 
 ```text
 EEG-Emotion-Recognition/
-|-- README.md
-|-- assets/
-|   |-- workflow_overview.png
-|   |-- workflow_original_slide.pptx
-|   |-- training_accuracy.png
-|   `-- training_loss.png
-|-- notebooks/
-|-- src/
-|-- data/
-|-- results/
-`-- docs/
+├── README.md
+├── assets/
+│   ├── workflow_overview.png
+│   ├── workflow_original_slide.pptx
+│   ├── training_accuracy.png
+│   └── training_loss.png
+├── notebooks/
+├── src/
+├── data/
+├── results/
+└── docs/
 ```
 
 ---
