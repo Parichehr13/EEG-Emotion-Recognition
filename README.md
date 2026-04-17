@@ -38,7 +38,7 @@ The main project materials currently included in the repository are:
 
 This repository is derived from my master's thesis:
 
-**Title:** *Using Evolutionary Computation Algorithms for EEG-based Emotion Recognition*  
+**Title:** *EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization*  
 **Author:** Parichehr Moradi  
 **Degree:** M.Sc. in Biomedical Engineering  
 **Institution:** University of Isfahan  
