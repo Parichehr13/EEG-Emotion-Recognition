@@ -4,24 +4,26 @@
   <img src="figures/ER_with_EEG/figure_08_cell084_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png" alt="Optimized CNN architecture" width="320">
 </p>
 
-EEG-based emotion recognition using convolutional neural networks and hyperparameter optimization on the **DEAP** and **SEED** benchmark datasets.
+EEG-based emotion recognition using convolutional neural networks, public benchmark datasets, and hyperparameter optimization for affective state classification.
 
-This repository contains the main notebook, exported figures, and project documentation for my work on **emotion recognition from EEG signals**. The project is based on my master's thesis and explores how careful preprocessing and CNN design can improve classification performance on both dimensional and discrete emotion recognition tasks.
+This repository presents my work on **emotion recognition from electroencephalography (EEG)**. It is based on my master's thesis and includes the main experimental notebook, exported figures, and documentation for experiments built around the **DEAP** and **SEED** datasets.
+
+The current implementation is notebook-based and preserves the workflow close to its original research form.
 
 ## Overview
 
-Emotion recognition from EEG is an important problem in affective computing, brain-computer interfaces, and human-computer interaction. EEG is especially useful for this task because it reflects brain activity directly and captures information that is difficult to obtain from facial expressions or speech alone.
+Emotion recognition from EEG is an important problem in affective computing, brain-computer interfaces, and human-computer interaction. Compared with surface-level signals such as facial expressions or speech, EEG offers a more direct physiological view of emotional processing.
 
-In this project, I use a compact **1D CNN** for EEG-based emotion classification and improve its performance with hyperparameter optimization. The notebook also includes comparisons against several classical machine learning baselines.
+In this project, I study EEG-based emotion classification with a compact **1D CNN** and compare it with several classical machine learning baselines. The work focuses on building a full pipeline from preprocessing to classification and improving performance through hyperparameter tuning.
 
 ## Project Goals
 
 - Build an EEG-based emotion recognition pipeline
 - Preprocess and relabel public benchmark datasets for classification
 - Train a compact CNN for emotion recognition
-- Improve model design through hyperparameter optimization
-- Evaluate performance on both binary and multi-class emotion tasks
-- Compare deep learning results with standard ML baselines
+- Improve model performance through hyperparameter optimization
+- Evaluate both binary and multi-class emotion recognition tasks
+- Compare deep learning results with classical ML baselines
 
 ## Repository Contents
 
@@ -42,23 +44,37 @@ EEG-Emotion-Recognition/
 ## Main Files
 
 - `ER_with_EEG.ipynb`: main notebook containing preprocessing, model definition, training, evaluation, and baseline experiments
-- `figures/ER_with_EEG/`: exported figures from notebook outputs, including learning curves, confusion matrices, and architecture visuals
-- `data/README.md`: dataset notes, access guidance, and local folder expectations for DEAP and SEED
+- `figures/ER_with_EEG/`: exported notebook figures including architecture visuals, learning curves, and confusion matrices
+- `data/README.md`: dataset notes, access guidance, and expected local folder layout
+
+## Workflow Summary
+
+At a high level, the project follows four stages:
+
+1. EEG signal loading
+2. Preprocessing and relabeling
+3. CNN-based learning and baseline comparison
+4. Emotion classification and evaluation
+
+The repository covers:
+
+- **DEAP** for binary emotion classification across multiple affective dimensions
+- **SEED** for three-class emotion recognition
 
 ## Datasets
 
 ### DEAP
 
-**DEAP** is a multimodal dataset for emotion analysis using physiological signals. It includes EEG recordings and self-assessment labels collected while participants watched music video excerpts.
+The **DEAP** dataset is a widely used benchmark for emotion analysis using physiological signals. In this project, it is used for binary classification on multiple emotional dimensions.
 
 Main characteristics:
 
 - 32 participants
 - 40 trials per participant
 - 32 EEG channels used in this project
-- Emotion dimensions used in this repository: valence, arousal, dominance, and liking
+- Target dimensions: valence, arousal, dominance, and liking
 
-How DEAP is used here:
+How DEAP is used in this repository:
 
 - Loads the original `.dat` subject files
 - Keeps the 32 EEG channels
@@ -78,14 +94,14 @@ This preprocessing supports four binary classification tasks:
 
 ### SEED
 
-**SEED** is a public EEG emotion dataset for recognizing discrete emotions induced by film clips.
+The **SEED** dataset is a public EEG emotion dataset for recognizing discrete emotions induced by film clips.
 
 Main characteristics:
 
 - 15 subjects
 - 3 emotion classes: negative, neutral, and positive
 
-How SEED is used here:
+How SEED is used in this repository:
 
 - Uses extracted features rather than raw EEG time series
 - Works with official extracted feature files and reshapes them for CNN training
@@ -104,16 +120,25 @@ The final SEED experiment is a three-class classification task:
 
 The datasets are **not included** in this repository.
 
-They are large and may also have their own usage and access conditions, so this repository contains the code, figures, and documentation only. Use the official dataset sources to obtain the data:
+They are large and may also have their own access and redistribution conditions, so this repository contains the code, figures, and documentation only. Please obtain the datasets from their official sources:
 
 - **DEAP**: https://www.eecs.qmul.ac.uk/mmv/datasets/deap/
 - **SEED**: https://bcmi.sjtu.edu.cn/home/seed/index.html
 
-See [data/README.md](data/README.md) for the dataset notes and recommended local folder structure.
+See [data/README.md](data/README.md) for additional dataset notes and the recommended local folder structure.
 
-## Method
+## Methodology
 
-### Model
+### Preprocessing
+
+The preprocessing stage organizes EEG signals into model-ready inputs and labels. Depending on the dataset, the workflow includes:
+
+- segmentation into analysis windows
+- relabeling into target emotion classes
+- band-based EEG representation
+- train, validation, and test splitting
+
+### CNN-Based Learning
 
 The main deep learning model used in this project is a compact **1D CNN**.
 
@@ -134,7 +159,7 @@ High-level architecture:
 13. Dropout
 14. Softmax output
 
-Optimized CNN configuration used in the notebook:
+Optimized configuration used in the notebook:
 
 - `C1`: 32 filters, kernel size 2, stride 1, padding `same`, ReLU
 - `C2`: 128 filters, kernel size 5, stride 1, padding `same`, ReLU
@@ -145,7 +170,9 @@ Optimized CNN configuration used in the notebook:
 
 ### Hyperparameter Optimization
 
-The notebook includes layer-wise hyperparameter search using **Optuna** to tune parts of the network.
+A major part of this project is improving CNN performance through hyperparameter tuning.
+
+The notebook includes layer-wise hyperparameter search using **Optuna**, while the broader thesis context is motivated by evolutionary optimization ideas for CNN design in EEG emotion recognition.
 
 The tuning workflow covers:
 
@@ -154,6 +181,18 @@ The tuning workflow covers:
 - 3rd convolution layer (`C3`)
 - 1st dense layer (`FC1`)
 - 2nd dense layer (`FC2`)
+
+### Classical ML Baselines
+
+The notebook also evaluates several traditional machine learning methods on DEAP:
+
+- LDA
+- SVM
+- Random Forest
+- MLP
+- KNN
+
+These experiments provide a comparison point for the CNN-based approach.
 
 ## Training Setup
 
@@ -171,18 +210,6 @@ The tuning workflow covers:
 - Validation split during training: `15%`
 - Task: negative / neutral / positive
 
-## Classical ML Baselines
-
-The notebook also evaluates several traditional machine learning methods on DEAP:
-
-- LDA
-- SVM
-- Random Forest
-- MLP
-- KNN
-
-These experiments provide a comparison point for the CNN-based approach.
-
 ## Results
 
 ### Summary Table
@@ -198,6 +225,12 @@ These experiments provide a comparison point for the CNN-based approach.
 These results are consistent with the performance reported in the associated thesis experiments.
 
 ## Example Figures
+
+### Architecture Figure
+
+<p align="center">
+  <img src="figures/ER_with_EEG/figure_08_cell084_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png" alt="Optimized CNN architecture" width="320">
+</p>
 
 ### DEAP Valence Confusion Matrix
 
@@ -233,9 +266,9 @@ These results are consistent with the performance reported in the associated the
 
 - The optimized CNN performs strongly on both datasets
 - The DEAP tasks achieve high binary classification accuracy across all four emotional dimensions
-- The SEED experiment also achieves strong multi-class performance
+- The SEED experiment achieves strong multi-class performance
 - The CNN outperforms the classical ML baselines included in the notebook
-- Careful preprocessing and model tuning matter substantially for EEG emotion recognition
+- Careful preprocessing and model tuning are important for EEG emotion recognition
 
 ## How To Run
 
@@ -275,11 +308,23 @@ Potential next cleanup steps:
 - Separate training utilities from analysis cells
 - Export final model checkpoints and logs in a cleaner structure
 
+## Why This Project Matters
+
+Emotion recognition from EEG is relevant to several active research and application areas:
+
+- Affective computing
+- Brain-computer interfaces
+- Human-computer interaction
+- Adaptive intelligent systems
+- Mental health and assistive technologies
+
+Compared with surface-level behavioral signals, EEG provides a physiological signal that can capture internal emotional dynamics more directly.
+
 ## Research Background
 
 This project is based on my master's thesis:
 
-**Using Evolutionary Computation Algorithms for EEG-based Emotion Recognition**
+**Using Evolutionary Computation Algorithms for EEG-Based Emotion Recognition**
 
 The thesis studies deep learning for EEG emotion recognition and focuses on improving CNN design through hyperparameter optimization. It evaluates the method on DEAP and SEED and reports strong results for both datasets.
 
@@ -290,6 +335,17 @@ If you use this repository, please cite the original datasets and acknowledge th
 Suggested acknowledgement:
 
 > This repository is based on thesis work on EEG-based emotion recognition using CNNs and hyperparameter optimization, evaluated on the DEAP and SEED datasets.
+
+Suggested BibTeX entry:
+
+```bibtex
+@mastersthesis{moradi2022eegemotion,
+  title     = {Using Evolutionary Computation Algorithms for EEG-Based Emotion Recognition},
+  author    = {Moradi, Parichehr},
+  school    = {University of Isfahan},
+  year      = {2022}
+}
+```
 
 ## Acknowledgements
 
@@ -305,6 +361,13 @@ Suggested acknowledgement:
 - Run cross-subject and subject-independent evaluations
 - Compare additional architectures such as LSTM, EEGNet, and transformer-based models
 - Add experiment tracking and reproducible configuration files
+- Explore cross-dataset generalization and explainability for EEG features
+
+## Author
+
+**Parichehr Moradi**  
+Biomedical Engineering Researcher  
+Focus areas: EEG, affective computing, deep learning, biomedical signal analysis
 
 ## License
 
