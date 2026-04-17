@@ -24,6 +24,16 @@ Unlike many EEG emotion recognition pipelines that rely on manually selected CNN
 
 ---
 
+## Repository Files
+
+The main project materials currently included in the repository are:
+
+- `EEG_Emotion_Recognition.ipynb`: the primary notebook containing preprocessing, model construction, training, and evaluation
+- `figures/EEG_Emotion_Recognition/`: exported figures from the notebook outputs
+- `data/README.md`: dataset notes and local setup guidance for DEAP and SEED
+
+---
+
 ## Thesis Background
 
 This repository is derived from my master's thesis:
@@ -148,6 +158,38 @@ The optimization process follows a **layer-by-layer strategy**, aiming to find a
 
 ---
 
+## Visual Results
+
+The repository already includes exported figures from the notebook, so representative visual outputs are shown directly from `figures/EEG_Emotion_Recognition/`.
+
+### Optimized CNN Figure
+
+![Optimized CNN](figures/EEG_Emotion_Recognition/figure_08_cell084_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png)
+
+### DEAP Confusion Matrices
+
+#### Valence
+
+![DEAP Valence Confusion Matrix](figures/EEG_Emotion_Recognition/figure_12_cell097_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png)
+
+#### Arousal
+
+![DEAP Arousal Confusion Matrix](figures/EEG_Emotion_Recognition/figure_20_cell117_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png)
+
+#### Dominance
+
+![DEAP Dominance Confusion Matrix](figures/EEG_Emotion_Recognition/figure_28_cell137_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png)
+
+#### Liking
+
+![DEAP Liking Confusion Matrix](figures/EEG_Emotion_Recognition/figure_36_cell157_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png)
+
+### SEED Confusion Matrix
+
+![SEED Confusion Matrix](figures/EEG_Emotion_Recognition/figure_48_cell200_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png)
+
+---
+
 ## Reported Results
 
 ### DEAP Test Accuracy
@@ -171,7 +213,7 @@ These results indicate that the proposed optimized CNN framework performs strong
 
 ## Figures Folder
 
-The [`figures/`](figures/) directory contains exported visual outputs from the project, including:
+The [`figures/EEG_Emotion_Recognition/`](figures/EEG_Emotion_Recognition/) directory contains exported visual outputs from the project, including:
 
 - workflow and pipeline figures
 - CNN architecture-related diagrams

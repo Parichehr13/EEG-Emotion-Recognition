@@ -98,7 +98,7 @@ For **SEED**, the work evaluates classification of:
 
 ```text
 EEG-Emotion-Recognition/
-|-- ER_with_EEG.ipynb
+|-- EEG_Emotion_Recognition.ipynb
 |-- figures/
 |-- data/
 |   |-- README.md

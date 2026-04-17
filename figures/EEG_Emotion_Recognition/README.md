@@ -1,6 +1,6 @@
-# ER_with_EEG Figures
+# EEG_Emotion_Recognition Figures
 
-This folder contains figures exported from the saved outputs inside `ER_with_EEG.ipynb`.
+This folder contains figures exported from the saved outputs inside `EEG_Emotion_Recognition.ipynb`.
 
 ## Files
 
