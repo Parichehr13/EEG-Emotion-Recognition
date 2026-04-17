@@ -3,7 +3,7 @@
 EEG-based emotion recognition using deep learning and multi-objective hyperparameter optimization for emotional state classification on benchmark datasets.
 
 > This repository is based on my M.Sc. thesis:  
-> **Using Evolutionary Computation Algorithms for EEG-based Emotion Recognition**  
+> **EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization**  
 > **Parichehr Moradi**  
 > Department of Biomedical Engineering, Faculty of Engineering, University of Isfahan, 2022
 
