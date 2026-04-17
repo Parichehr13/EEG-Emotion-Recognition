@@ -1,0 +1,290 @@
+﻿[
+    {
+        "figure":  1,
+        "file":  "figure_01_cell009_loading-data__loading-and-pre-processing-deap-dataset.png",
+        "cell":  9,
+        "section":  "Loading Data \u003e Loading and Pre-processing Deap Dataset"
+    },
+    {
+        "figure":  2,
+        "file":  "figure_02_cell021_cnn-model-before-hp-tuning__loading-data-and-labels.png",
+        "cell":  21,
+        "section":  "CNN Model Before HP Tuning \u003e Loading Data and Labels"
+    },
+    {
+        "figure":  3,
+        "file":  "figure_03_cell028_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png",
+        "cell":  28,
+        "section":  "Training and Evaluation Before HP Tuning \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  4,
+        "file":  "figure_04_cell029_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png",
+        "cell":  29,
+        "section":  "Training and Evaluation Before HP Tuning \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  5,
+        "file":  "figure_05_cell032_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png",
+        "cell":  32,
+        "section":  "Training and Evaluation Before HP Tuning \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  6,
+        "file":  "figure_06_cell033_training-and-evaluation-before-hp-tuning__training-and-evaluation__training-and-evaluation.png",
+        "cell":  33,
+        "section":  "Training and Evaluation Before HP Tuning \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  7,
+        "file":  "figure_07_cell082_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png",
+        "cell":  82,
+        "section":  "CNN Model \u003e 5th Layer (i.e. Dense2) HPO \u003e Training and Evaluation"
+    },
+    {
+        "figure":  8,
+        "file":  "figure_08_cell084_cnn-model__5th-layer-i-e-dense2-hpo__training-and-evaluation.png",
+        "cell":  84,
+        "section":  "CNN Model \u003e 5th Layer (i.e. Dense2) HPO \u003e Training and Evaluation"
+    },
+    {
+        "figure":  9,
+        "file":  "figure_09_cell092_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  92,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  10,
+        "file":  "figure_10_cell093_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  93,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  11,
+        "file":  "figure_11_cell096_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  96,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  12,
+        "file":  "figure_12_cell097_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  97,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  13,
+        "file":  "figure_13_cell100_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  100,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  14,
+        "file":  "figure_14_cell101_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  101,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  15,
+        "file":  "figure_15_cell104_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  104,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  16,
+        "file":  "figure_16_cell105_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  105,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  17,
+        "file":  "figure_17_cell112_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  112,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  18,
+        "file":  "figure_18_cell113_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  113,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  19,
+        "file":  "figure_19_cell116_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  116,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  20,
+        "file":  "figure_20_cell117_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  117,
+        "section":  "Training and Evaluation \u003e Training and Evaluation with std calculation \u003e Training and Evaluation with std calculation"
+    },
+    {
+        "figure":  21,
+        "file":  "figure_21_cell120_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  120,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  22,
+        "file":  "figure_22_cell121_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  121,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  23,
+        "file":  "figure_23_cell124_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  124,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  24,
+        "file":  "figure_24_cell125_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  125,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  25,
+        "file":  "figure_25_cell132_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  132,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  26,
+        "file":  "figure_26_cell133_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  133,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  27,
+        "file":  "figure_27_cell136_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  136,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  28,
+        "file":  "figure_28_cell137_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  137,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  29,
+        "file":  "figure_29_cell140_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  140,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  30,
+        "file":  "figure_30_cell141_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  141,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  31,
+        "file":  "figure_31_cell144_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  144,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  32,
+        "file":  "figure_32_cell145_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  145,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  33,
+        "file":  "figure_33_cell152_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  152,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  34,
+        "file":  "figure_34_cell153_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  153,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  35,
+        "file":  "figure_35_cell156_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  156,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  36,
+        "file":  "figure_36_cell157_training-and-evaluation__training-and-evaluation-with-std-calculation__training-and-evaluation-with-std-calculation.png",
+        "cell":  157,
+        "section":  "Training and Evaluation \u003e Training and Evaluation  with std calculation \u003e Training and Evaluation  with std calculation"
+    },
+    {
+        "figure":  37,
+        "file":  "figure_37_cell160_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  160,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  38,
+        "file":  "figure_38_cell161_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  161,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  39,
+        "file":  "figure_39_cell164_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  164,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  40,
+        "file":  "figure_40_cell165_training-and-evaluation__training-and-evaluation__training-and-evaluation.png",
+        "cell":  165,
+        "section":  "Training and Evaluation \u003e Training and Evaluation \u003e Training and Evaluation"
+    },
+    {
+        "figure":  41,
+        "file":  "figure_41_cell173_ml-models__svm__training-and-evaluation.png",
+        "cell":  173,
+        "section":  "ML Models \u003e SVM \u003e Training and Evaluation"
+    },
+    {
+        "figure":  42,
+        "file":  "figure_42_cell175_ml-models__rfc__training-and-evaluation.png",
+        "cell":  175,
+        "section":  "ML Models \u003e RFC \u003e Training and Evaluation"
+    },
+    {
+        "figure":  43,
+        "file":  "figure_43_cell177_ml-models__mlp__training-and-evaluation.png",
+        "cell":  177,
+        "section":  "ML Models \u003e MLP \u003e Training and Evaluation"
+    },
+    {
+        "figure":  44,
+        "file":  "figure_44_cell179_ml-models__knn__training-and-evaluation.png",
+        "cell":  179,
+        "section":  "ML Models \u003e KNN \u003e Training and Evaluation"
+    },
+    {
+        "figure":  45,
+        "file":  "figure_45_cell191_cnn-model__loading-and-pre-processing-seed-dataset__training-and-evaluation.png",
+        "cell":  191,
+        "section":  "CNN Model \u003e Loading and Pre-processing SEED Dataset \u003e Training and Evaluation"
+    },
+    {
+        "figure":  46,
+        "file":  "figure_46_cell196_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png",
+        "cell":  196,
+        "section":  "Training and Evaluation \u003e Loading and Pre-processing SEED Dataset \u003e Training and Evaluation"
+    },
+    {
+        "figure":  47,
+        "file":  "figure_47_cell197_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png",
+        "cell":  197,
+        "section":  "Training and Evaluation \u003e Loading and Pre-processing SEED Dataset \u003e Training and Evaluation"
+    },
+    {
+        "figure":  48,
+        "file":  "figure_48_cell200_training-and-evaluation__loading-and-pre-processing-seed-dataset__training-and-evaluation.png",
+        "cell":  200,
+        "section":  "Training and Evaluation \u003e Loading and Pre-processing SEED Dataset \u003e Training and Evaluation"
+    }
+]
