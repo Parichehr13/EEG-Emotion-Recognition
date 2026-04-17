@@ -4,7 +4,7 @@ This repository now includes the `ER_with_EEG` notebook for EEG-based emotion re
 
 ## Contents
 
-- `notebooks/ER_with_EEG.ipynb`: the main Colab notebook with experiments on the DEAP dataset and SEED feature-based classification.
+- `ER_with_EEG.ipynb`: the main Colab notebook with experiments on the DEAP dataset and SEED feature-based classification.
 - `figures/ER_with_EEG/`: exported notebook figures saved from the notebook outputs.
 
 ## Current Notebook Notes
