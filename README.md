@@ -80,9 +80,9 @@ The overall workflow of the project can be summarized as:
 
 ### Pipeline figure
 
-![Workflow Overview](assets/workflow_overview.png)
+![Workflow Overview](figures/README/workflow_overview.png)
 
-**Original slide:** [workflow_original_slide.pptx](assets/workflow_original_slide.pptx)
+**Original slide:** [workflow_original_slide.pptx](figures/README/workflow_original_slide.pptx)
 
 ---
 
@@ -181,11 +181,11 @@ The repository includes training plots that summarize model learning dynamics.
 
 ### Accuracy Curve
 
-![Training Accuracy](assets/training_accuracy.png)
+![Training Accuracy](figures/README/training_accuracy.png)
 
 ### Loss Curve
 
-![Training Loss](assets/training_loss.png)
+![Training Loss](figures/README/training_loss.png)
 
 These figures illustrate the optimization behavior during training and provide a compact visual summary of model convergence.
 
@@ -222,7 +222,6 @@ This figure collection is useful for understanding both the baseline and optimiz
 At the moment, this repository mainly documents the project through:
 
 - the README
-- visual assets
 - exported figures
 - research results and summaries
 
@@ -231,12 +230,12 @@ A clean long-term structure for the repository can follow a layout such as:
 ```text
 EEG-Emotion-Recognition/
 ├── README.md
-├── assets/
-│   ├── workflow_overview.png
-│   ├── workflow_original_slide.pptx
-│   ├── training_accuracy.png
-│   └── training_loss.png
 ├── figures/
+│   ├── README/
+│   │   ├── workflow_overview.png
+│   │   ├── workflow_original_slide.pptx
+│   │   ├── training_accuracy.png
+│   │   └── training_loss.png
 ├── notebooks/
 ├── src/
 ├── data/
