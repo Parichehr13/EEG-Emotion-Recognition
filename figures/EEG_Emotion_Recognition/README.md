@@ -1,4 +1,4 @@
-# EEG_Emotion_Recognition Figures
+﻿# EEG_Emotion_Recognition Figures
 
 This folder contains exported figures from `EEG_Emotion_Recognition.ipynb`. The images summarize preprocessing, model behavior, and evaluation results for EEG-based emotion recognition experiments on the **DEAP** and **SEED** datasets.
 
