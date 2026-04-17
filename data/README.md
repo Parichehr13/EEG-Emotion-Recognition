@@ -155,7 +155,7 @@ If you use or reference this repository, please also acknowledge the related the
 
 - DEAP: A Database for Emotion Analysis using Physiological Signals
 - SEED Dataset, BCMI Laboratory, Shanghai Jiao Tong University
-- Thesis: *Using Evolutionary Computation Algorithms for EEG-based Emotion Recognition*
+- Thesis: *EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization*
 
 ## Notes
 
