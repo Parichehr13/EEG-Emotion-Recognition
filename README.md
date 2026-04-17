@@ -256,9 +256,6 @@ EEG-Emotion-Recognition/
 |-- data/
 |-- results/
 `-- docs/
-```
-
-If code, notebooks, or experiment scripts are added later, they can be organized in the directories above.
 
 ---
 
