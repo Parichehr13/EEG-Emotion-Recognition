@@ -1,4 +1,4 @@
-# EEG Emotion Recognition
+﻿# EEG Emotion Recognition
 
 EEG-based emotion recognition using deep learning and multi-objective hyperparameter optimization for emotional state classification on benchmark datasets.
 
@@ -77,12 +77,6 @@ The overall workflow of the project can be summarized as:
 5. **Hyperparameter optimization using NSGA-II**
 6. **Training and evaluation**
 7. **Performance analysis through curves and confusion matrices**
-
-### Pipeline figure
-
-![Workflow Overview](figures/README/workflow_overview.png)
-
-**Original slide:** [workflow_original_slide.pptx](figures/README/workflow_original_slide.pptx)
 
 ---
 
@@ -175,22 +169,6 @@ These results indicate that the proposed optimized CNN framework performs strong
 
 ---
 
-## Training Behavior
-
-The repository includes training plots that summarize model learning dynamics.
-
-### Accuracy Curve
-
-![Training Accuracy](figures/README/training_accuracy.png)
-
-### Loss Curve
-
-![Training Loss](figures/README/training_loss.png)
-
-These figures illustrate the optimization behavior during training and provide a compact visual summary of model convergence.
-
----
-
 ## Figures Folder
 
 The [`figures/`](figures/) directory contains exported visual outputs from the project, including:
@@ -229,18 +207,13 @@ A clean long-term structure for the repository can follow a layout such as:
 
 ```text
 EEG-Emotion-Recognition/
-├── README.md
-├── figures/
-│   ├── README/
-│   │   ├── workflow_overview.png
-│   │   ├── workflow_original_slide.pptx
-│   │   ├── training_accuracy.png
-│   │   └── training_loss.png
-├── notebooks/
-├── src/
-├── data/
-├── results/
-└── docs/
+|-- README.md
+|-- figures/
+|-- notebooks/
+|-- src/
+|-- data/
+|-- results/
+`-- docs/
 ```
 
 If code, notebooks, or experiment scripts are added later, they can be organized in the directories above.
