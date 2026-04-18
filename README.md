@@ -237,28 +237,6 @@ This figure collection is useful for understanding both the baseline and optimiz
 
 ---
 
-## Repository Contents
-
-At the moment, this repository mainly documents the project through:
-
-- the README
-- exported figures
-- research results and summaries
-
-A clean long-term structure for the repository can follow a layout such as:
-
-```text
-EEG-Emotion-Recognition/
-|-- README.md
-|-- figures/
-|-- notebooks/
-|-- src/
-|-- data/
-|-- results/
-`-- docs/
-
----
-
 ## Reproducibility Note
 
 This repository is a **research-oriented project repository** derived from an academic thesis. Depending on the current version of the repository, some parts may emphasize:
