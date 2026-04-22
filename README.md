@@ -1,101 +1,69 @@
 # EEG Emotion Recognition
 
-Compact, thesis-derived research code for EEG-based emotion recognition with CNNs and Optuna/NSGA-II style hyperparameter search on the DEAP and SEED benchmarks.
+EEG-based emotion recognition with convolutional neural networks and hyperparameter optimization on the DEAP and SEED benchmarks.
 
-This repository is based on the M.Sc. thesis:
+This repository is derived from an M.Sc. thesis and preserves the original experimental notebook while providing a lighter project structure for data preparation, training, and evaluation.
 
-> Parichehr Moradi, *EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization*, University of Isfahan, 2022.
+## Overview
 
-GitHub repository: <https://github.com/Parichehr13/EEG-Emotion-Recognition>
+The project studies emotion recognition from EEG in two common settings:
 
-## Why this project is worth keeping
+- binary affective classification on DEAP
+- three-class emotion classification on SEED
 
-The project idea is strong enough to matter for a PhD CV:
+The repository includes:
 
-- EEG-based emotion recognition is a real research topic, not a toy benchmark.
-- The work spans two established datasets: DEAP and SEED.
-- The thesis combines deep learning with explicit hyperparameter search rather than only reporting a hand-tuned CNN.
-- The notebook already contains nontrivial preprocessing, model design, Optuna-based search, classical baselines, and visual outputs.
+- the main thesis notebook
+- exported figures from the notebook
+- reusable Python modules for dataset preparation, model definition, and training
+- simple command-line scripts and example configs
+- reported result tables from the thesis experiments
 
-The previous weakness was mostly reproducibility and presentation, not lack of technical substance.
+## Datasets and Tasks
 
-## What changed in this cleanup
+| Dataset | Task | Labels |
+| --- | --- | --- |
+| DEAP | Binary classification | Valence, Arousal, Dominance, Liking as low vs. high |
+| SEED | Three-class classification | Negative, Neutral, Positive |
 
-This repository is intentionally still compact, but it is no longer only a Colab notebook dump.
+DEAP experiments use the Python preprocessed release with subject `.dat` files.
+SEED experiments use the extracted-feature release.
 
-- `notebooks/EEG_Emotion_Recognition.ipynb` keeps the original thesis notebook as a research record.
-- `src/eeg_emotion_recognition/` contains reusable data-loading, model, and training utilities extracted from the notebook logic.
-- `scripts/` contains command-line entry points for DEAP training, DEAP hyperparameter search, SEED feature preparation, and SEED training.
-- `configs/` contains example experiment configs.
-- `results/` contains explicit reported metrics and an archived Optuna trial-history CSV.
-- `data/README.md` now documents exactly which dataset artifacts the code expects.
-- `docs/reproducibility.md` states what is verified by execution in this environment and what is only inferred from notebook inspection.
+Raw datasets are not redistributed in this repository.
 
-## Current reproducibility status
+## Method Summary
 
-This cleanup improves reproducibility, but it does **not** claim full rerun verification in the current environment.
+At a high level, the workflow is:
 
-- Verified by inspection:
-  - the notebook contains DEAP preprocessing, DEAP CNN training, DEAP Optuna search, classical ML baselines, SEED feature extraction, and SEED CNN training
-  - the notebook includes embedded output cells with reported test accuracies
-  - the local workspace contains SEED extracted-feature data and a DEAP MATLAB archive
-- Not verified by execution here:
-  - end-to-end notebook execution
-  - script execution
-  - reproduction of reported metrics
-- Main blockers in this environment:
-  - `python` is not runnable here
-  - `jupyter` is not installed here
-  - the DEAP notebook expects `data_preprocessed_python.zip` with `.dat` files, while the local workspace currently contains `data_preprocessed_matlab.zip`
+1. prepare dataset-specific inputs
+2. construct CNN models for EEG classification
+3. run training and evaluation
+4. run hyperparameter search for selected DEAP experiments
 
-If you use this repository in an application or CV, the honest claim is:
+The current codebase preserves the thesis workflow rather than redefining it as a new benchmark framework.
 
-> thesis-derived research project with code, structured scripts, and documented reported results; not independently revalidated in this environment.
+Implementation notes:
 
-## Research tasks
+- DEAP preprocessing follows the original notebook logic: band-pass filtering, standardization, and sliding-window segmentation.
+- SEED preparation builds numpy arrays from the released extracted-feature `.mat` files.
+- Hyperparameter search is implemented with Optuna using `NSGAIISampler`, matching the thesis notebook approach.
 
-### DEAP
+## Reported Results
 
-Binary classification on four affective dimensions:
-
-- valence: low vs. high
-- arousal: low vs. high
-- dominance: low vs. high
-- liking: low vs. high
-
-The notebook uses 32 EEG channels and applies band-pass filtering before segmentation.
-
-Important implementation note:
-the original notebook comment says "10 seconds windows with 2 seconds overlap", but the code advances windows by `256` samples while using `window_size = 1280` at `128 Hz`. That corresponds to a stride of 2 seconds, so the actual overlap is 8 seconds. This repository preserves the notebook behavior and documents it explicitly.
-
-### SEED
-
-Three-class classification:
-
-- negative
-- neutral
-- positive
-
-The notebook uses the extracted-feature release and builds arrays from `feature_type x smoothing_method` folders such as `de_movingAve`.
-
-## Reported results
-
-The repository currently has **selected-run reported test accuracies**, not repeated-run averages with confidence intervals.
-They are recorded in [results/reported_metrics.csv](results/reported_metrics.csv).
-
-Reported selected-run accuracies from the notebook / thesis materials:
+The metrics below are reported thesis results recorded from the project notebook and thesis materials.
+They are included as project results, not as freshly rerun results from this README revision.
 
 | Dataset | Setting | Accuracy |
 | --- | --- | --- |
-| DEAP | Valence (binary) | 96.47% |
-| DEAP | Arousal (binary) | 97.54% |
-| DEAP | Dominance (binary) | 98.18% |
-| DEAP | Liking (binary) | 98.10% |
+| DEAP | Valence | 96.47% |
+| DEAP | Arousal | 97.54% |
+| DEAP | Dominance | 98.18% |
+| DEAP | Liking | 98.10% |
 | SEED | Negative / Neutral / Positive | 96.14% |
 
-These are useful reported outcomes, but they should be read as thesis/project results rather than independently reproduced benchmark claims.
+Structured copies of these reported values are available in [results/reported_metrics.csv](results/reported_metrics.csv).
 
-## Repository layout
+## Repository Structure
 
 ```text
 .
@@ -106,24 +74,21 @@ These are useful reported outcomes, but they should be read as thesis/project re
 |-- data/
 |   `-- README.md
 |-- docs/
-|   |-- reproducibility.md
-|   |-- slides/
-|   `-- thesis/
+|   `-- reproducibility.md
 |-- figures/
 |   `-- EEG_Emotion_Recognition/
 |-- notebooks/
 |   |-- EEG_Emotion_Recognition.ipynb
 |   `-- archive/
 |-- results/
-|   |-- README.md
-|   |-- legacy/
-|   `-- reported_metrics.csv
+|   |-- reported_metrics.csv
+|   `-- legacy/
 |-- scripts/
 `-- src/
     `-- eeg_emotion_recognition/
 ```
 
-## Quick start
+## Reproducibility
 
 Install dependencies:
 
@@ -131,16 +96,16 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Prepare and train DEAP from the Python preprocessed archive:
+Prepare and train DEAP:
 
 ```bash
 python scripts/train_deap.py \
   --config configs/deap_valence_selected.json \
   --source path/to/data_preprocessed_python.zip \
-  --output-dir results/runs/deap_valence_selected
+  --output-dir results/runs/deap_valence
 ```
 
-Run Optuna/NSGA-II style hyperparameter search for DEAP:
+Run DEAP hyperparameter search:
 
 ```bash
 python scripts/run_deap_optuna.py \
@@ -150,45 +115,34 @@ python scripts/run_deap_optuna.py \
   --output-dir results/runs/deap_valence_optuna
 ```
 
-Prepare SEED features from the extracted-feature archive:
+Prepare SEED features and train:
 
 ```bash
 python scripts/prepare_seed_features.py \
   --config configs/seed_de_movingave.json \
   --source path/to/ExtractedFeatures.zip \
   --output-dir data/processed/seed/de_movingAve
-```
 
-Train the SEED CNN:
-
-```bash
 python scripts/train_seed.py \
   --config configs/seed_de_movingave.json \
   --source-dir data/processed/seed/de_movingAve \
   --output-dir results/runs/seed_de_movingAve
 ```
 
-## What this repo still does not solve
+Dataset setup details are documented in [data/README.md](data/README.md).
+Additional notes on what is and is not currently verified are documented in [docs/reproducibility.md](docs/reproducibility.md).
 
-This is still a compact thesis-derived project, not a full benchmark framework.
+## Limitations
 
-- No multi-seed aggregation pipeline is provided yet.
-- No subject-independent evaluation pipeline is claimed here.
-- No cross-dataset generalization experiments are added.
-- No new results are invented in this cleanup.
+- The reported results are thesis results and are not newly reproduced in this README revision.
+- The repository is still centered on a thesis workflow and does not aim to be a general-purpose EEG benchmark framework.
+- Repeated-run aggregation, subject-independent evaluation, and cross-dataset experiments are not provided here.
+- Some original experiments remain easiest to inspect in the preserved notebook.
 
-Those would be reasonable future upgrades, but they should be added only after the current subject-dependent thesis pipeline is rerun cleanly.
+## Thesis Note
 
-## Recommendation for PhD applications
+The repository is based on:
 
-This repository is now much stronger as a CV project than a raw notebook-only version because it shows:
+Parichehr Moradi, *EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization*, University of Isfahan, 2022.
 
-- a real biomedical ML problem
-- benchmark awareness across DEAP and SEED
-- structured code beyond a notebook
-- honest reproducibility boundaries
-- documented reported results instead of vague claims
-
-It is strongest when presented as:
-
-> a compact, thesis-derived research project with CNN-based EEG emotion recognition, hyperparameter optimization, and reproducible scripts/documentation for the original workflow.
+For citation metadata, see [CITATION.cff](CITATION.cff).
