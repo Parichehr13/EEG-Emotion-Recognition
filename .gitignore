@@ -1,17 +1,12 @@
-.ipynb_checkpoints/
 __pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
 
-# Keep large raw datasets local
-data/*
-!data/README.md
-!data/.gitkeep
-Dataset/
+data/raw/
+data/processed/
+data/interim/
 
-# Common dataset and model artifacts
-*.dat
-*.npz
-*.npy
-*.zip
-*.h5
-*.hdf5
-*.pkl
+results/runs/
+models/
+

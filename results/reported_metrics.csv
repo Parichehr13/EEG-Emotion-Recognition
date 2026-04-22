@@ -1,0 +1,7 @@
+dataset,task,classes,metric,accuracy_pct,result_type,source,execution_status
+DEAP,valence,low_vs_high,test_accuracy,96.4699,selected_notebook_run,thesis_notebook_embedded_output,not_rerun_here
+DEAP,arousal,low_vs_high,test_accuracy,97.5405,selected_notebook_run,thesis_notebook_embedded_output,not_rerun_here
+DEAP,dominance,low_vs_high,test_accuracy,98.1771,selected_notebook_run,thesis_notebook_embedded_output,not_rerun_here
+DEAP,liking,low_vs_high,test_accuracy,98.1047,selected_notebook_run,thesis_notebook_embedded_output,not_rerun_here
+SEED,negative_neutral_positive,3_class,test_accuracy,96.1370,selected_notebook_run,thesis_notebook_embedded_output,not_rerun_here
+

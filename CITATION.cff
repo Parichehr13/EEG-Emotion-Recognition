@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: EEG Emotion Recognition
+message: If you use this repository, please cite the thesis and the repository metadata.
+type: software
+authors:
+  - family-names: Moradi
+    given-names: Parichehr
+repository-code: https://github.com/Parichehr13/EEG-Emotion-Recognition
+license: MIT
+keywords:
+  - eeg
+  - emotion-recognition
+  - affective-computing
+  - cnn
+  - deap
+  - seed
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: Moradi
+      given-names: Parichehr
+  title: EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization
+  institution: University of Isfahan
+  year: 2022
+  thesis-type: Master's thesis
+

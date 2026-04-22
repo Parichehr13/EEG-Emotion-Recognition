@@ -1,0 +1,12 @@
+{
+  "task": "valence",
+  "band": "alpha",
+  "model_variant": "selected",
+  "batch_size": 512,
+  "epochs": 100,
+  "test_size": 0.2,
+  "validation_split": 0.15,
+  "seed": 42,
+  "learning_rate": 0.001
+}
+

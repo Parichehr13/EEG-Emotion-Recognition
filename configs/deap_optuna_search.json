@@ -1,0 +1,13 @@
+{
+  "task": "valence",
+  "band": "alpha",
+  "batch_size": 64,
+  "epochs": 10,
+  "n_trials": 100,
+  "test_size": 0.2,
+  "validation_split": 0.15,
+  "seed": 42,
+  "train_limit": 5000,
+  "test_limit": 500
+}
+
