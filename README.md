@@ -2,18 +2,18 @@
 
 EEG-based emotion recognition with convolutional neural networks and hyperparameter optimization on the DEAP and SEED benchmarks.
 
-This repository is derived from an M.Sc. thesis and preserves the original experimental notebook while providing a lighter project structure for data preparation, training, and evaluation.
+This repository contains thesis-derived research code and preserves the original experimental notebook alongside lightweight scripts for data preparation, training, and evaluation.
 
 ## Overview
 
-The project studies emotion recognition from EEG in two common settings:
+The project studies emotion recognition from EEG in two settings:
 
 - binary affective classification on DEAP
 - three-class emotion classification on SEED
 
 The repository includes:
 
-- the main thesis notebook
+- the main experimental notebook
 - exported figures from the notebook
 - reusable Python modules for dataset preparation, model definition, and training
 - simple command-line scripts and example configs
@@ -33,25 +33,23 @@ Raw datasets are not redistributed in this repository.
 
 ## Method Summary
 
-At a high level, the workflow is:
+The repository follows the original thesis workflow:
 
 1. prepare dataset-specific inputs
-2. construct CNN models for EEG classification
-3. run training and evaluation
-4. run hyperparameter search for selected DEAP experiments
+2. train CNN models for EEG classification
+3. evaluate selected DEAP and SEED tasks
+4. run Optuna-based hyperparameter search for selected DEAP experiments
 
-The current codebase preserves the thesis workflow rather than redefining it as a new benchmark framework.
+Implementation highlights:
 
-Implementation notes:
-
-- DEAP preprocessing follows the original notebook logic: band-pass filtering, standardization, and sliding-window segmentation.
+- DEAP preprocessing follows the notebook logic: band-pass filtering, standardization, and sliding-window segmentation.
 - SEED preparation builds numpy arrays from the released extracted-feature `.mat` files.
-- Hyperparameter search is implemented with Optuna using `NSGAIISampler`, matching the thesis notebook approach.
+- Hyperparameter search is implemented with Optuna using `NSGAIISampler`.
 
 ## Reported Results
 
-The metrics below are reported thesis results recorded from the project notebook and thesis materials.
-They are included as project results, not as freshly rerun results from this README revision.
+The values below are reported thesis experiment results recorded from the project notebook and thesis materials.
+They are included here as reported results, not as freshly rerun results from this README revision.
 
 | Dataset | Setting | Accuracy |
 | --- | --- | --- |
@@ -63,7 +61,7 @@ They are included as project results, not as freshly rerun results from this REA
 
 Structured copies of these reported values are available in [results/reported_metrics.csv](results/reported_metrics.csv).
 
-## Repository Structure
+## Repository Contents
 
 ```text
 .
@@ -96,28 +94,20 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Prepare and train DEAP:
+Example commands:
 
 ```bash
 python scripts/train_deap.py \
   --config configs/deap_valence_selected.json \
   --source path/to/data_preprocessed_python.zip \
   --output-dir results/runs/deap_valence
-```
 
-Run DEAP hyperparameter search:
-
-```bash
 python scripts/run_deap_optuna.py \
   --config configs/deap_optuna_search.json \
   --source path/to/data_preprocessed_python.zip \
   --task valence \
   --output-dir results/runs/deap_valence_optuna
-```
 
-Prepare SEED features and train:
-
-```bash
 python scripts/prepare_seed_features.py \
   --config configs/seed_de_movingave.json \
   --source path/to/ExtractedFeatures.zip \
@@ -135,14 +125,6 @@ Additional notes on what is and is not currently verified are documented in [doc
 ## Limitations
 
 - The reported results are thesis results and are not newly reproduced in this README revision.
-- The repository is still centered on a thesis workflow and does not aim to be a general-purpose EEG benchmark framework.
+- The repository remains centered on the original thesis workflow and is not intended as a general EEG benchmark framework.
 - Repeated-run aggregation, subject-independent evaluation, and cross-dataset experiments are not provided here.
 - Some original experiments remain easiest to inspect in the preserved notebook.
-
-## Thesis Note
-
-The repository is based on:
-
-Parichehr Moradi, *EEG-Based Emotion Recognition Using Convolutional Neural Networks and Hyperparameter Optimization*, University of Isfahan, 2022.
-
-For citation metadata, see [CITATION.cff](CITATION.cff).
